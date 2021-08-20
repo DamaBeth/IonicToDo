@@ -10,15 +10,43 @@
 <ion-content [fullscreen]="true">
   <div class="goals__cards">
     <div *ngFor="let item of todos" class="goals__cards__card">
-      <div class="goals__cards__card__header">
-        <i class="goals__cards__card__header__icon"></i>
-        <h3 class="goals__cards__card__header__title">{{item.title}}</h3>
-        <h4 class="goals__cards__card__header__subtitle">yesterday</h4>
-      </div>
-      <div class="goals__cards__card__actions">
-        <span class="goals__cards__card__actions__id">3 of 4</span>
-        <button class="goals__cards__card__actions__done">Finalizar</button>
-      </div>
+        <ion-list>
+          <ion-item>
+            <ion-checkbox color="danger"></ion-checkbox>
+            <ion-label class="goals__cards__card__header__title" >{{item.title}}</ion-label>
+            <button class="goals__cards__card__actions__done">
+              <ion-icon name="trash-outline"></ion-icon>
+            </button>
+          </ion-item>
+            <ion-card-subtitle class="goals__cards__card__header__subtitle">
+              Tareas
+              <span>•</span>
+              Hoy
+              <span>•</span>
+              12:00 pm
+            </ion-card-subtitle>        
+        </ion-list>
+    </div>
+  </div>
+
+  <div>
+    <ion-title>Completado</ion-title>
+  </div>
+  <div class="goals__cards">
+    <div class="goals__cards__card">
+      <ion-item>
+        <button class="goals__cards__card__actions__done">
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+        <ion-input placeholder="Agregar una tarea"></ion-input>
+        <button class="goals__cards__card__actions__done">
+          <ion-icon name="home-outline"></ion-icon>
+        </button><button class="goals__cards__card__actions__done">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </button><button class="goals__cards__card__actions__done">
+          <ion-icon name="alarm-outline"></ion-icon>
+        </button>
+      </ion-item>
     </div>
   </div>
 </ion-content>
