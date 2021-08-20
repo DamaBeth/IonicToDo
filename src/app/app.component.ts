@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Mi día', url: '/folder/Mi día', icon: 'sunny' },
-    { title: 'Importante', url: '/folder/Importante', icon: 'star' },
-    { title: 'Planeado', url: '/folder/Planeado', icon: 'calendar' },
-    { title: 'Tareas', url: '/folder/Tareas', icon: 'home' }
+    { title: 'Mi día', url: '/card/Mi día', icon: 'sunny' },
+    { title: 'Importante', url: '/card/Importante', icon: 'star' },
+    { title: 'Planeado', url: '/card/Planeado', icon: 'calendar' },
+    { title: 'Tareas', url: '/card/Tareas', icon: 'home' }
   ];
   public appPagesDivider = [
-    { title: 'Clases virtuales', url: '/folder/Clases Virtuales', icon: 'menu' },
-    { title: 'Eliminados', url: '/folder/Eliminados', icon: 'trash' }
+    { title: 'Clases virtuales', url: '/card/Clases Virtuales', icon: 'menu' },
+    { title: 'Eliminados', url: '/card/Eliminados', icon: 'trash' }
   ];
   constructor() {}
 }

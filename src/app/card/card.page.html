@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ card }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="goals__cards">
+    <div *ngFor="let item of todos" class="goals__cards__card">
+      <div class="goals__cards__card__header">
+        <i class="goals__cards__card__header__icon"></i>
+        <h3 class="goals__cards__card__header__title">{{item.title}}</h3>
+        <h4 class="goals__cards__card__header__subtitle">yesterday</h4>
+      </div>
+      <div class="goals__cards__card__actions">
+        <span class="goals__cards__card__actions__id">3 of 4</span>
+        <button class="goals__cards__card__actions__done">Finalizar</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
